@@ -1,4 +1,4 @@
-package org.example.module2;
+package org.example.module2.inheritance;
 
 public class Skier extends Sportsman {
     public Skier(String name, String team, int age) {

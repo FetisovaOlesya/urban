@@ -1,4 +1,4 @@
-package org.example.module2;
+package org.example.module2.inheritance;
 
 public class Footballer extends Sportsman {
 

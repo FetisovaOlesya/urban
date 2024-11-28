@@ -1,8 +1,4 @@
-package org.example;
-
-import org.example.module2.inheritance.Footballer;
-import org.example.module2.inheritance.HockeyPlayer;
-import org.example.module2.inheritance.Skier;
+package org.example.module2.inheritance;
 
 public class Main {
     public static void main(String[] args) {
