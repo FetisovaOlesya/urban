@@ -1,4 +1,4 @@
-package org.example;
+package org.example.module1;
 
 import org.example.module2.inheritance.Footballer;
 import org.example.module2.inheritance.HockeyPlayer;

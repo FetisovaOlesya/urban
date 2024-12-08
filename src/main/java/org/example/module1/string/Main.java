@@ -1,4 +1,4 @@
-package org.example.module1.lesson.string;
+package org.example.module1.string;
 
 public class Main {
     public static void main(String[] args) {

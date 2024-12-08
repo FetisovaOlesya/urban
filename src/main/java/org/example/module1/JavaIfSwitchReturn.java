@@ -1,4 +1,4 @@
-package org.example;
+package org.example.module1;
 
 public class JavaIfSwitchReturn {
     public static void main(String[] args) {
