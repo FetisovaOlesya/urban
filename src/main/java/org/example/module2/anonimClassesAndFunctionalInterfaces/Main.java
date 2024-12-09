@@ -34,12 +34,21 @@ public class Main {
                 return "Животное: " + name +", семейство - " + family;
             }
         };
+        Concationble concationbleHouse = new Concationble<Integer, Integer>() {
+            @Override
+            public String concat(Integer numberEntrance, Integer countAppartments) {
+                return "Подъезд: " + numberEntrance +", содержит - " + countAppartments + " квартир.";
+            }
+        };
 
         System.out.println(" ------- вывод информации о животных и его семействе ---------- ");
         System.out.println(concationbleEnimal.concat("лисица", "псовые"));
         System.out.println(concationbleEnimal.concat("барсук", "куньи"));
         System.out.println(concationbleEnimal.concat("выдра", "куньи"));
         System.out.println(concationbleEnimal.concat("леопард", "кошачьих"));
+        System.out.println(" ------- вывод информации о номере подъезда и количестве квартир в доме---------- ");
+        System.out.println(concationbleHouse.concat(1, 24));
+        System.out.println(concationbleHouse.concat(2, 36));
     }
 
 

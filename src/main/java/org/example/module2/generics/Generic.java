@@ -25,7 +25,7 @@ public class Generic<T, V> {
             throw new Exception("positionOne за рамками возможного диапазона");
         }
         if (positionTwo <0 || positionTwo >= array.length) {
-            throw new Exception("positionOne за рамками возможного диапазона");
+            throw new Exception("positionTwo за рамками возможного диапазона");
         }
 
         T tmp = array[positionOne];

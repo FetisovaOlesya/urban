@@ -1,9 +1,9 @@
 package org.example.module2.enumlesson;
 
 public class Person {
-    String name;
-    int age;
-    Gender gender;
+    private String name;
+    private int age;
+    private Gender gender;
 
     public Person(String name, int age, Gender gender) {
         this.name = name;
@@ -20,9 +20,26 @@ public class Person {
                 "}\n";
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
     enum Gender {
         MAN("Мужчина"),
         WOMAN("Женщина");
+
+        public String getGender() {
+            return gender;
+        }
+
         private String gender;
 
         Gender(String gender) {

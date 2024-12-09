@@ -35,10 +35,10 @@ public class Main {
 
     }
 
-    public static ArrayList<Person> getListPersonByGender(ArrayList<Person> people, Enum<Person.Gender> gender) {
+    public static ArrayList<Person> getListPersonByGender(ArrayList<Person> people, Person.Gender gender) {
         ArrayList<Person> peopleByGender = new ArrayList<Person>();
         for (int i = 0; i < people.size(); i++ ) {
-            if (people.get(i).gender.equals(gender)) {
+            if (people.get(i).getGender().equals(gender)) {
                 peopleByGender.add(people.get(i));
             }
         }
