@@ -8,7 +8,13 @@ public class Main {
         System.out.println("--------- задание 1 ----------");
         useSetHash();
         System.out.println("--------- задание 2 ----------");
-        useLinkedHashSet();
+        HashSet<Integer> setNumbers = new HashSet<Integer>();
+        setNumbers.add(8);
+        setNumbers.add(14);
+        for (int i=20; i>=0; i--) {
+            setNumbers.add(i);
+        }
+        useLinkedHashSet(setNumbers);
     }
 
     public static void useSetHash() {
@@ -46,18 +52,12 @@ public class Main {
         return result;
     }
 
-    public static void useLinkedHashSet() {
-        HashSet<Integer> setNumbers = new HashSet<Integer>();
+    public static void useLinkedHashSet(HashSet<Integer> setNumbers) {
         HashSet<Integer> resultOne = new HashSet<Integer>();
         TreeSet<Integer> resultTwo = new TreeSet<Integer>();
         HashSet<Integer> resultThree = new HashSet<Integer>();
         Integer number;
 
-        setNumbers.add(8);
-        setNumbers.add(14);
-        for (int i=20; i>=0; i--) {
-            setNumbers.add(i);
-        }
         System.out.println(setNumbers);
         Iterator<Integer> itOne = setNumbers.iterator();
         while (itOne.hasNext()) {
